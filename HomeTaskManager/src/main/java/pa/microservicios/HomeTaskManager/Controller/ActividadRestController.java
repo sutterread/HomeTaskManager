@@ -1,9 +1,12 @@
 package pa.microservicios.HomeTaskManager.Controller;
 
+import org.springframework.web.bind.annotation.RestController;
+
 /**
  *
  * @author Asus
+ *
  */
-public class ActividadRestController {
-    
+@RestController 
+public class ActividadRestController {   
 }

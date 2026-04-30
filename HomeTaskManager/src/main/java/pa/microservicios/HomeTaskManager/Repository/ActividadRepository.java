@@ -1,9 +1,13 @@
 package pa.microservicios.HomeTaskManager.Repository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import pa.microservicios.HomeTaskManager.Model.ActividadDTO;
+
 /**
  *
  * @author Asus
  */
-public class ActividadRepository {
-    
+@Repository
+public interface ActividadRepository extends JpaRepository<ActividadDTO, Long> {
 }
