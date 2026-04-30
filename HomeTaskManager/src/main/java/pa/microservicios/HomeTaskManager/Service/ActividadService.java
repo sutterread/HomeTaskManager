@@ -24,7 +24,7 @@ public class ActividadService {
      * Permite insertar una nueva actividad
      *
      * @param actividad
-     * @return
+     * @return ActividadDTO guardada en al BD
      */
     public ActividadDTO insertarActividad(ActividadDTO actividad) {
         return actividadRepository.save(actividad);
@@ -33,7 +33,7 @@ public class ActividadService {
     /**
      * Retorna todas las actividades
      *
-     * @return
+     * @return Lista de ActividadDTO  
      */
     public List<ActividadDTO> getAllActividades() {
         return actividadRepository.findAll();
@@ -43,7 +43,7 @@ public class ActividadService {
      * Buscar una actividad por id
      *
      * @param id
-     * @return
+     * @return ActividadDTO 
      */
     public ActividadDTO getActividadById(Long id) {
         //Optional porque me permite manejar excepciones
@@ -67,7 +67,7 @@ public class ActividadService {
      *
      * @param id
      * @param actividadActualizada
-     * @return
+     * @return ActividadDTO actualizada y guardada en la BD usando .save
      */
     public ActividadDTO actualizarActividad(Long id, ActividadDTO actividadActualizada) {
         //verificar que existe
