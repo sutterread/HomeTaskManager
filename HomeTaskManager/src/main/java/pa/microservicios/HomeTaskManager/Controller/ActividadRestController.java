@@ -12,8 +12,8 @@ import pa.microservicios.HomeTaskManager.Service.ActividadService;
 
 /**
  *
- * @author Asus
- *
+ * @author Asus Clase RestController para devolver JSON y exponer los endpoints
+ * mediante solicitudes http
  */
 @RestController
 //generar una misma ruta para todos los endpoint
