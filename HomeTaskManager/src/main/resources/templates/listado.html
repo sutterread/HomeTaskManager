@@ -7,9 +7,7 @@
 </head>
 <body>
     <h1>Lista de Actividades</h1>
-    
-    <a href="/">Volver al Inicio</a>
-    <a href="/actividad/crear">Crear Nueva Actividad</a>
+   
     <br/><br/>
 
     <table border="1" th:if="${!actividades.isEmpty()}">
@@ -21,7 +19,6 @@
                 <th>Tipo</th>
                 <th>Fecha Inicio</th>
                 <th>Fecha Término</th>
-                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -32,11 +29,6 @@
                 <td th:text="${actividad.tipoActividad}"></td>
                 <td th:text="${actividad.fechaInicio}"></td>
                 <td th:text="${actividad.fechaTerminacion}"></td>
-                <td>
-                    <a th:href="@{/actividad/{id}(id=${actividad.idActividad})}">Ver</a>
-                    <a th:href="@{/actividad/editar/{id}(id=${actividad.idActividad})}">Editar</a>
-                    <a th:href="@{/actividad/borraractividad/{id}(id=${actividad.idActividad})}" onclick="return confirm('¿Estás seguro?')">Eliminar</a>
-                </td>
             </tr>
         </tbody>
     </table>

@@ -13,7 +13,7 @@
 ///**
 // *
 // * @author Asus Clase RestController para devolver JSON y exponer los endpoints
-// * mediante solicitudes http
+// * mediante solicitudes http  DEBE PROBARSE USANDO POSTMAN ;D
 // */
 //@RestController
 ////generar una misma ruta para todos los endpoint

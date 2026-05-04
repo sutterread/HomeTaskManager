@@ -9,7 +9,7 @@
     <h1 th:if="${actividad.idActividad == null}">Crear Nueva Actividad</h1>
     <h1 th:if="${actividad.idActividad != null}">Editar Actividad</h1>
     
-    <form th:if="${actividad.idActividad == null}" action="#" th:action="@{/actividad/crear}" th:object="${actividad}" method="post">
+    <form th:if="${actividad.idActividad == null}" th:action="@{/actividad/actividad}" th:object="${actividad}" method="post">
         <label for="titulo">Título:</label>
         <input type="text" id="titulo" th:field="*{titulo}" required>
         <br/>
@@ -52,7 +52,7 @@
         <a href="/actividad/actividades">Cancelar</a>
     </form>
 
-    <form th:if="${actividad.idActividad != null}" th:action="@{/actividad/editar/{id}(id=${actividad.idActividad})}" th:object="${actividad}" method="post">
+    <form th:if="${actividad.idActividad != null}" th:action="@{/actividad/actualizaractividad/{id}(id=${actividad.idActividad})}" th:object="${actividad}" method="post">
         <label for="titulo">Título:</label>
         <input type="text" id="titulo" th:field="*{titulo}" required>
         <br/>

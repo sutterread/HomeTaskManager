@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import lombok.Data;
 
 /**
- *
+ * Clase para responder
  * @author Asus Entidad de salida
  */
 @Data
