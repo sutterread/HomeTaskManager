@@ -64,9 +64,9 @@ public class ActividadController {
         return "ingresodatos";
     }
 
-    @RequestMapping(value = "/actualizaractividad/{id}", method = RequestMethod.PUT)
+    @RequestMapping(value = "/actualizaractividad/{id}", method = RequestMethod.POST)
     public String procesarFormularioActualizar(@PathVariable Long id, @ModelAttribute ActividadDTO actividad){
         actividadService.actualizarActividad(id, actividad);
-        return "ingresodatos";
+        return "redirect:/actividades";
     }
 }
