@@ -17,9 +17,6 @@
     <p><strong>ID Quehacer:</strong> <span th:text="${actividad.idQuehacer}"></span></p>
     <p><strong>ID Tutor:</strong> <span th:text="${actividad.idTutor}"></span></p>
     <p><strong>ID Hijo a Cargo:</strong> <span th:text="${actividad.idHijoAcargo}"></span></p>
-
-    <a href="/actividad/actividades">Volver</a>
-    <a th:href="@{/actividad/editar/{id}(id=${actividad.idActividad})}">Editar</a>
-    <a th:href="@{/actividad/borraractividad/{id}(id=${actividad.idActividad})}" onclick="return confirm('¿Estás seguro?')">Eliminar</a>
+    
 </body>
 </html>

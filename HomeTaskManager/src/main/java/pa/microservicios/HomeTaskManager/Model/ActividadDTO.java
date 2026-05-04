@@ -49,6 +49,17 @@ public class ActividadDTO {
     @Column(name = "id_hijo_acargo", nullable = false, unique = false, length = 50)
     private int idHijoAcargo;
 
+    /**
+     * Constructor para el DTO sin ID
+     * @param titulo
+     * @param descripcion
+     * @param fechaInicio
+     * @param fechaTerminacion
+     * @param tipoActividad
+     * @param idQuehacer
+     * @param idTutor
+     * @param idHijoAcargo
+     */
     public ActividadDTO(String titulo, String descripcion, LocalDate fechaInicio, LocalDate fechaTerminacion, String tipoActividad, int idQuehacer, int idTutor, int idHijoAcargo) {
         this.titulo = titulo;
         this.descripcion = descripcion;
