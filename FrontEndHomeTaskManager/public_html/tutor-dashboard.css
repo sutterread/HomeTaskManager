@@ -185,10 +185,16 @@
   color: #fff;
 }
 
+.family-section h3,
+.family-section h4{
+  color: #fff;
+}
+
 .family-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color:#fff;
 }
 
 .family-status {
@@ -225,7 +231,7 @@
   border-bottom: 3px solid var(--gold-400);
 }
 
-/* ... .tab-toggle { display: none; } ... */
+.tab-toggle { display: none; }
 
 
 .family-tab-content { display: none; }
