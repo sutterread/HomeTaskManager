@@ -57,7 +57,7 @@ public class ActividadController {
         return "redirect:/listado";
     }
 
-    @RequestMapping(value = "/actualizaractividad/{id}", method = RequestMethod.PUT)
+    @RequestMapping(value = "/actualizaractividad/{id}", method = RequestMethod.GET)
     public String mostrarFormularioActualizar(@PathVariable Long id, Model model) {
         ActividadDTO actividad = actividadService.getActividadById(id);
         model.addAttribute("actividad", actividad);
